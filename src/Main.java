@@ -11,7 +11,7 @@ import java.util.UUID;
 
 
 public class Main {
-	final static int IDS_2_FETCH = 5000; //Select IDs to delete
+	final static int IDS_2_FETCH = 51000; //Select IDs to delete
 	static List<String> IDS_2_DELETE = new ArrayList<> (IDS_2_FETCH);
 	final static int DELETE_BATCH_SIZE = 1000 ;
 	final static String inlistJoin = " /* <OPTGUIDELINES> <INLIST2JOIN TABLE=\"REPOSITORY.DELETED_ITEMS\" COLUMN=\"ITEM_UUID\"/> </OPTGUIDELINES> */";
@@ -151,14 +151,14 @@ public class Main {
 					int i = IDS_2_DELETE.size();
 					if(i > DELETE_BATCH_SIZE){
 						do{
-							System.out.println ("Delete : "+ DELETE_BATCH_SIZE);
+							//System.out.println ("Delete : "+ DELETE_BATCH_SIZE);
 							deleteRecords(con);
 							i -= DELETE_BATCH_SIZE;
-							System.out.println ("Remains : " + i);
+							//System.out.println ("Remains : " + i);
 						}while (i > DELETE_BATCH_SIZE);
 					}
 					if(i > 0){
-						System.out.println ("Delete : " + i);
+						//System.out.println ("Delete : " + i);
 						deleteRecords(con);
 						i = 0;
 					}
@@ -230,7 +230,7 @@ public class Main {
 		
 		try {
 			PreparedStatement pstmt;
-			String tmp2del = String.join(", ", arr2delete);
+			String tmp2del = "'"+String.join("', '", arr2delete)+"'";
 			long startTime = System.nanoTime ();
 			Duration durationSelectLoop = Duration.ofMillis (1);
 			String updateStmnt = "DELETE FROM REPOSITORY.DELETED_ITEMS WHERE ITEM_UUID IN( "+tmp2del+" ) " + inlistJoin;
@@ -241,10 +241,10 @@ public class Main {
 			pstmt.close ();
 			con.commit ();
 
-			System.out.println ("Deleted records: " + totalDelCnt+" Duration :" +
+			/*System.out.println ("Deleted records: " + totalDelCnt+" Duration :" +
 					durationSelectLoop.plusNanos (System.nanoTime () - startTime).toSeconds () +
 					" sec");
-			
+			*/
 		} catch (SQLException ex) {
 			System.err.println ("SQLException information in =deleteRecords=");
 			while (ex != null) {
