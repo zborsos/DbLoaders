@@ -75,7 +75,7 @@ public class Main {
 							con.commit ();
 						}
 					} catch (SQLException se) {
-						System.err.println ("Could not load into table");
+						System.out.println ("Could not load into table");
 						System.out.println ("Exception: " + se);
 						se.printStackTrace ();
 					}
@@ -198,15 +198,15 @@ public class Main {
 			con.close ();
 			System.out.println ("**** Disconnected from data source");
 		} catch (ClassNotFoundException e) {
-			System.err.println ("Could not load JDBC driver");
+			System.out.println ("Could not load JDBC driver");
 			System.out.println ("Exception: " + e);
 			
 		} catch (SQLException ex) {
-			System.err.println ("SQLException information");
+			System.out.println ("SQLException information");
 			while (ex != null) {
-				System.err.println ("Error msg: " + ex.getMessage ());
-				System.err.println ("SQLSTATE: " + ex.getSQLState ());
-				System.err.println ("Error code: " + ex.getErrorCode ());
+				System.out.println ("Error msg: " + ex.getMessage ());
+				System.out.println ("SQLSTATE: " + ex.getSQLState ());
+				System.out.println ("Error code: " + ex.getErrorCode ());
 				ex = ex.getNextException (); // For drivers that support chained exceptions
 			}
 		}
@@ -230,12 +230,13 @@ public class Main {
 		
 		try {
 			PreparedStatement pstmt;
-			String tmp2del = "'"+String.join("', '", arr2delete)+"'";
+			Array sqlarray = con.createArrayOf("VARCHAR", arr2delete);
 			long startTime = System.nanoTime ();
 			Duration durationSelectLoop = Duration.ofMillis (1);
-			String updateStmnt = "DELETE FROM REPOSITORY.DELETED_ITEMS WHERE ITEM_UUID IN( "+tmp2del+" ) " + inlistJoin;
+			String updateStmnt = "DELETE FROM REPOSITORY.DELETED_ITEMS WHERE ITEM_UUID IN( ? ) " + inlistJoin;
 
 			pstmt = con.prepareStatement (updateStmnt);
+			pstmt.setArray(1, sqlarray);
 			int totalDelCnt = pstmt.executeUpdate();
 			
 			pstmt.close ();
@@ -246,16 +247,15 @@ public class Main {
 					" sec");
 			*/
 		} catch (SQLException ex) {
-			System.err.println ("SQLException information in =deleteRecords=");
+			System.out.println ("SQLException information in =deleteRecords=");
 			while (ex != null) {
-				System.err.println ("Error msg: " + ex.getMessage ());
-				System.err.println ("SQLSTATE: " + ex.getSQLState ());
-				System.err.println ("Error code: " + ex.getErrorCode ());
+				System.out.println ("Error msg: " + ex.getMessage ());
+				System.out.println ("SQLSTATE: " + ex.getSQLState ());
+				System.out.println ("Error code: " + ex.getErrorCode ());
 				ex.printStackTrace ();
 				ex = ex.getNextException (); // For drivers that support chained exceptions
 			}
 		}
-		return;
 	}
 }
 
