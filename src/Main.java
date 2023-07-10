@@ -6,14 +6,15 @@ import java.time.Duration;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
 
 public class Main {
-	final static int IDS_2_FETCH = 51000; //Select IDs to delete
+	final static int IDS_2_FETCH = 3; //Select IDs to delete
 	static List<String> IDS_2_DELETE = new ArrayList<> (IDS_2_FETCH);
-	final static int DELETE_BATCH_SIZE = 1000 ;
+	final static int DELETE_BATCH_SIZE = 1 ;
 	final static String inlistJoin = " /* <OPTGUIDELINES> <INLIST2JOIN TABLE=\"REPOSITORY.DELETED_ITEMS\" COLUMN=\"ITEM_UUID\"/> </OPTGUIDELINES> */";
 	
 	public static void main (String[] args) {
@@ -88,7 +89,7 @@ public class Main {
 			}
 			
 //			Delete with embedded SELECT
-			if (true) {
+			if (false) {
 				int loopCount = (IDS_2_FETCH%DELETE_BATCH_SIZE > 0)?
 						(int)(IDS_2_FETCH/DELETE_BATCH_SIZE) + 1 : (int)(IDS_2_FETCH/DELETE_BATCH_SIZE);
 				int totalDelCnt = 0;
@@ -131,7 +132,11 @@ public class Main {
 				Duration durationSelectLoop = Duration.ofMillis (1);
 
 				rs = pstmt.executeQuery ();
-				
+				ResultSetMetaData rsmd = rs.getMetaData();
+				int column_name = rsmd.getColumnDisplaySize (1);
+				System.out.println (column_name);
+				System.out.println (rs.getMetaData ().getColumnTypeName (1));
+
 				while (rs.next()) {
 					String id = rs.getString (1);
 					IDS_2_DELETE.add (id);
@@ -230,13 +235,25 @@ public class Main {
 		
 		try {
 			PreparedStatement pstmt;
-			Array sqlarray = con.createArrayOf("VARCHAR", arr2delete);
+			Array sqlarray = con.createArrayOf("CHAR", arr2delete);
+			//String tmp2del = "'"+String.join("', '", arr2delete)+"'";
 			long startTime = System.nanoTime ();
 			Duration durationSelectLoop = Duration.ofMillis (1);
-			String updateStmnt = "DELETE FROM REPOSITORY.DELETED_ITEMS WHERE ITEM_UUID IN( ? ) " + inlistJoin;
+			String baseDelete = "DELETE FROM REPOSITORY.DELETED_ITEMS WHERE ITEM_UUID IN( ";
+			for(int i=0; i<arr2delete.length; i++){
+				baseDelete += " ?,";
+			}
+			baseDelete = baseDelete.substring(0, baseDelete.length()-1);
+			baseDelete += " )";
+			
+			String updateStmnt = baseDelete + inlistJoin;
 
 			pstmt = con.prepareStatement (updateStmnt);
-			pstmt.setArray(1, sqlarray);
+			//pstmt.setString (1, tmp2del);
+			for(int i=0; i<arr2delete.length; i++){
+				pstmt.setString (i+1, arr2delete[i]);
+			}
+			//pstmt.setArray (1, sqlarray);
 			int totalDelCnt = pstmt.executeUpdate();
 			
 			pstmt.close ();
