@@ -1,0 +1,94 @@
+
+v
+java:S1141A"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$2ee16528-f6dc-4719-95c5-484c96151c8e
+’	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ§ê€şÿÿÿÿJ$05bde633-6937-4c05-8d46-96a25e4eccdd
+^
+java:S1643ó"Use a StringBuilder instead.(¶°ÔèøÿÿÿÿJ$a0ab606f-628a-4dc7-8bf7-a0ced9d8896b
+‹
+java:S2095~"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“÷ç¥J$437a93e6-0a0f-43cd-9c1d-c2a01ddbe13d
+Œ
+java:S2095ú"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(È˜ÛØJ$f4ed6192-35d5-45c8-b7a4-4870cb86e226
+‰
+java:S2095,"HUse try-with-resources or close this "Connection" in a "finally" clause.(ÏÚŸÅşÿÿÿÿJ$1d93e8b0-ebb7-41fb-b8ed-245c5d00f776
+•	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ÿ³—ÄJ$7d0d43be-0082-43d5-a0d3-6e9badb22a75
+˜
+java:S3008"WRename this field "IDS_2_DELETE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷è¬ÊúÿÿÿÿJ$afdab22c-3060-4e60-8b48-24b0df22f0f3
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ãíî¯J$4fa1ba12-10ca-4199-bbf6-b491ed6d5b31
+†
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(‰¯Ç¤øÿÿÿÿJ$7082729a-85a8-41e9-a0f8-0e0ee6cd0721
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ÿ³—ÄJ$43b04f60-a02a-46dd-8ed1-e1c9c5638dd5
+
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(Çµí‘J$a39c54e0-1703-4ead-8c7f-5768ac72508b
+r
+java:S1854§"5Remove this useless assignment to local variable "i".(Ş¼Ş¢J$851aa61c-5222-4507-b40e-6f06ad93cc6d
+k	java:S106$"+Replace this use of System.out by a logger.(Ğ”Ï—şÿÿÿÿJ$669b63a2-fb45-46d0-b1a6-74a0127d3b89
+h
+java:S4925("-Remove this "Class.forName()", it is useless.(ÑÌÒ(J$9004613b-54be-4aab-9a70-1d9e54a09316
+f	java:S106)"+Replace this use of System.out by a logger.(¸â•èJ$f2e79a30-3984-4a04-8154-d99ce8c48dfd
+w
+java:S6437,"6Revoke and change this password, as it is compromised.(ÏÚŸÅşÿÿÿÿJ$dd0592df-347f-4298-9e3c-bab68fe17112
+f	java:S106-"+Replace this use of System.out by a logger.(‹Å µJ$08ad6985-6d92-4722-a1bd-cabd8b7a24bd
+k	java:S106N"+Replace this use of System.out by a logger.(‘Ôí³ûÿÿÿÿJ$93f6befa-bc98-4824-b747-958cadb2d5d8
+k	java:S106O"+Replace this use of System.out by a logger.(²ÕßùÿÿÿÿJ$dfecfd0a-9f5f-4214-8841-2733b192c927
+f	java:S106T"+Replace this use of System.out by a logger.(¦¶×¶J$02347b2e-7379-4d23-b01c-5484096c445c
+b
+java:S1905]"&Remove this unnecessary cast to "int".(Ô´¸ßJ$feddc541-1806-4959-a2d8-1088116d9eee
+k	java:S106_"+Replace this use of System.out by a logger.(ºÔ“†úÿÿÿÿJ$ab76a14e-5a2b-4cd3-9d22-f4dc07d5175c
+f	java:S106b"+Replace this use of System.out by a logger.(äñ£¿J$76408bfe-b81c-43b0-880d-164cbece0be4
+f	java:S106c"+Replace this use of System.out by a logger.(Î’ŞïJ$454941d7-12ab-4298-a021-709296720699
+k	java:S106p"+Replace this use of System.out by a logger.(ğ…ÿ’ùÿÿÿÿJ$820ccfb8-a985-4f17-a533-d368d01aafe8
+k	java:S106q"+Replace this use of System.out by a logger.(¼õ¯ûıÿÿÿÿJ$19d6d431-2138-40b2-a56e-1e34574f7bc5
+k	java:S106r"+Replace this use of System.out by a logger.(²½ĞšıÿÿÿÿJ$f3bd212d-56ab-4261-b209-0c286a4b9649
+f	java:S106u"+Replace this use of System.out by a logger.(‰ÒèÔJ$451cf640-e8b8-45db-83d8-5bd0abe87cd8
+k	java:S106v"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$991014b0-4def-42f2-9737-0a968f3ac09d
+f	java:S106{"+Replace this use of System.out by a logger.(´·ıúJ$7c840476-6406-4645-9ddd-d72cc3a0f729
+g	java:S106ˆ"+Replace this use of System.out by a logger.(¦ŠíJ$fe6f95c0-992f-4214-8099-c8d16832346a
+g	java:S106‰"+Replace this use of System.out by a logger.(·÷ìşJ$5a635657-9ec5-4e51-96a8-04a22dd5ee20
+g	java:S106“"+Replace this use of System.out by a logger.(èé›ßJ$c315f76f-7fc0-47a7-9fe5-2dcc03146594
+g	java:S106”"+Replace this use of System.out by a logger.(éù‹“J$e659f5ef-14b9-4cfc-8d33-e23d5889fc0a
+}	java:S125"<This block of commented-out lines of code should be removed.(é£Ú„şÿÿÿÿJ$b3dc01c6-26f0-4278-ba9e-078a10d53fc9
+w	java:S125¡"<This block of commented-out lines of code should be removed.(Œ×êSJ$4ea414a3-6996-499c-89f9-9c3720d3c0bb
+x	java:S125¥"<This block of commented-out lines of code should be removed.(‡’’åJ$dd01ed30-f21b-47eb-9f25-a8e1d1267446
+g	java:S106ª"+Replace this use of System.out by a logger.(±‘ÂªJ$89b8ab6a-ec37-43dd-bc70-65629bbabb7b
+l	java:S106¿"+Replace this use of System.out by a logger.(ğ…ÿ’ùÿÿÿÿJ$0883cf42-7593-4eb5-9331-d7b88e082ebe
+l	java:S106À"+Replace this use of System.out by a logger.(âëòıÿÿÿÿJ$8dc61663-c5a9-4d16-b080-c4276aa37a4a
+l	java:S106Á"+Replace this use of System.out by a logger.(²½ĞšıÿÿÿÿJ$7ad20fac-4326-43e3-87cd-bbd4ae7ac942
+l	java:S106Ë"+Replace this use of System.out by a logger.(ûˆ¤¹şÿÿÿÿJ$e13688b4-a33c-47ce-8ea6-2e2199b34b16
+f	java:S106Í"+Replace this use of System.out by a logger.(ÑõìJ$cea9d0d4-8cd6-4e8b-8c17-2e64aff528ae
+l	java:S106Î"+Replace this use of System.out by a logger.(²àéÁüÿÿÿÿJ$df6ac698-d5a5-4f61-ae25-be523b7ce98e
+l	java:S106Ñ"+Replace this use of System.out by a logger.(Ğ‡¥²ÿÿÿÿÿJ$df295022-5b6e-4120-be4a-be7f847a9a45
+l	java:S106Ó"+Replace this use of System.out by a logger.(ì¹ƒ„ûÿÿÿÿJ$7eb91673-fcc1-406f-a34b-517fe24fe20e
+l	java:S106Ô"+Replace this use of System.out by a logger.(ş„œüüÿÿÿÿJ$bab8d655-58ff-4692-850b-79fdf696fd98
+l	java:S106Õ"+Replace this use of System.out by a logger.(ó—ŠœúÿÿÿÿJ$579335b0-37f8-4e43-85aa-54234fcdaf6c
+y
+java:S1854í"<Remove this useless assignment to local variable "sqlarray".(Œ ¼ÚJ$5e9d24e9-04d8-4d4a-a200-417bb9ea0fc5
+
+java:S1854ï"=Remove this useless assignment to local variable "startTime".(¬¶Ø¬ùÿÿÿÿJ$dab97512-123b-48bd-8c81-7928f95688ea
+ˆ
+java:S1854ğ"FRemove this useless assignment to local variable "durationSelectLoop".(è·†ùÿÿÿÿJ$6a40f1c0-2f74-4520-9f77-59eef9ed2bcf
+|
+java:S1854€"?Remove this useless assignment to local variable "totalDelCnt".(²¢¼J$038da3b4-eef2-483d-a8fc-6830d8a0f083
+{
+java:S1155Ş">Use isEmpty() to check whether the collection is empty or not.(ÓÊ•¨J$e573446e-d1c1-409e-89ed-ddadd4e3b333
+k
+java:S5413ç")Verify that "remove()" is used correctly.(ÿŞ²ŞøÿÿÿÿJ$5e6ba0b3-bbbf-4b09-a2ab-246edee14c58
+j
+java:S1481í"-Remove this unused "sqlarray" local variable.(Œ ¼ÚJ$a98104f0-9681-48a5-ae06-8e6a33e9baf1
+x	java:S125î"<This block of commented-out lines of code should be removed.(æòğÌJ$cddb77dd-f0f2-446c-a4bb-32fa21531a34
+p
+java:S1481ï".Remove this unused "startTime" local variable.(¬¶Ø¬ùÿÿÿÿJ$7fbe9fb1-a3c8-447a-b4fc-a5bdd0dcd156
+y
+java:S1481ğ"7Remove this unused "durationSelectLoop" local variable.(è·†ùÿÿÿÿJ$e0b5fed5-d253-4760-b318-2ed8db05bf2d
+x	java:S125û"<This block of commented-out lines of code should be removed.(ù²ÃJ$59e1c2ca-32a8-440d-b629-90d9fb51a95e
+}	java:S125ÿ"<This block of commented-out lines of code should be removed.(Í»ÙùÿÿÿÿJ$0c95e840-d443-4b89-9674-4bec9a89c5da
+m
+java:S1481€"0Remove this unused "totalDelCnt" local variable.(²¢¼J$9da3f4e9-7b47-4c60-a0d9-03879965a653
+}	java:S125‡"<This block of commented-out lines of code should be removed.(³¦ÜğùÿÿÿÿJ$29d11794-a404-479c-9f40-f7ab9ad9d232
+g	java:S106Š"+Replace this use of System.out by a logger.(Èñ¡èJ$15898fe8-42f6-4ef2-8f54-5205c7aac24d
+l	java:S106Œ"+Replace this use of System.out by a logger.(ì¹ƒ„ûÿÿÿÿJ$8cef0cca-52dc-4dd4-81c0-5d0d1a00e733
+l	java:S106"+Replace this use of System.out by a logger.(ş„œüüÿÿÿÿJ$329ed43d-e410-4ee4-900d-492196711bd7
+l	java:S106"+Replace this use of System.out by a logger.(ó—ŠœúÿÿÿÿJ$5929804c-db9f-4abf-91df-a5baf9452816
+ƒ
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 161 to 64, Complexity from 16 to 14, Nesting Level from 5 to 2, Number of Variables from 46 to 6.(Çµí‘J$98b13f93-a7d0-47d7-9758-d7730cd8ffa5

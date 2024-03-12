@@ -1,0 +1,21 @@
+
+}
+java:S11411"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÌÍÚã1J$d07aa071-9d4f-4883-87a9-12545a96f378
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çû±ş8ÍÍÚã1J$3c063d64-696e-44fd-a78f-b53897288845
+é
+java:S1598"¥This file "Oracle.java" should be located in "com/zborsos/dbloaders/orcleloader" directory, not in "/Users/zborsos/IdeaProjects/DbLoaders/src/com/zborsos/dbloaders".(ÿÕ±ª8ÎÍÚã1J$804e8359-8fa0-4909-a723-0523e6bd5ed7
+
+java:S1854"7Remove this useless assignment to local variable "now".(‘äåşÿÿÿÿ8ÓÍÚã1J$f9d5a7ee-6f7f-4227-8498-7fd4dac4db93
+p
+java:S1481"(Remove this unused "now" local variable.(‘äåşÿÿÿÿ8ÕÍÚã1J$ed196947-79ef-448c-aef1-bc84e84c58ce
+j
+java:S1481"'Remove this unused "rs" local variable.(¶¨ÜŒ8ÖÍÚã1J$f12ec4bb-d0ee-428a-bbec-2ac77b23c3fb
+p
+java:S4925"-Remove this "Class.forName()", it is useless.(ùíÄé8×ÍÚã1J$cb3b5363-abfa-4058-afff-48d791af0cbb
+~
+java:S6437"6Revoke and change this password, as it is compromised.(ÏÓØñùÿÿÿÿ8×ÍÚã1J$e4ef5173-6d5f-4dd4-854d-dd746bc79518
+r	java:S106<"+Replace this use of System.out by a logger.(‘Ôí³ûÿÿÿÿ8ÙÍÚã1J$102794f0-18c3-46c7-b123-cdb48fbe405f
+r	java:S106="+Replace this use of System.out by a logger.(²Õßùÿÿÿÿ8ÙÍÚã1J$93ff371e-fd6a-4312-9d49-94a7f9cc1f67
+m	java:S106B"+Replace this use of System.out by a logger.(ª®ò8ÚÍÚã1J$d0bb785c-8176-4a44-8c11-f3097af83eaf
+m	java:S106I"+Replace this use of System.out by a logger.(°¿¦ì8ÚÍÚã1J$498ea501-b1ed-4317-b40a-18e96991cf42
+r	java:S106J"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÚÍÚã1J$7e941aef-eee9-40d0-9d6b-3454de759068

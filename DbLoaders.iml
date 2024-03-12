@@ -5,8 +5,12 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="ibm-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="db2jcc4" level="project" />
+    <orderEntry type="library" name="org.eclipse.emf.ecore" level="project" />
+    <orderEntry type="library" name="db2java" level="project" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="bfea488d-019e-4bca-a380-197a5ae17af1" />
   </component>
 </module>

@@ -1,0 +1,19 @@
+
+}
+java:S11411"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÌÍÚã1J$47033b15-29ef-4885-b9c3-bcff19950443
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çû±ş8ÍÍÚã1J$e66bd79b-554c-4e2a-b3da-bcea921dc3f2
+
+java:S1854"7Remove this useless assignment to local variable "now".(‘äåşÿÿÿÿ8ÓÍÚã1J$75530157-cb75-4666-a1dd-ef6baee0551a
+p
+java:S1481"(Remove this unused "now" local variable.(‘äåşÿÿÿÿ8ÕÍÚã1J$9c3fa716-6de5-4af8-80b3-980051da3468
+j
+java:S1481"'Remove this unused "rs" local variable.(¶¨ÜŒ8ÖÍÚã1J$8728febc-b228-4e80-b5d2-9d35d7040df9
+p
+java:S4925"-Remove this "Class.forName()", it is useless.(ùíÄé8×ÍÚã1J$fc4ee8a1-7522-4d0f-9a55-00cef0bcbb65
+~
+java:S6437"6Revoke and change this password, as it is compromised.(ÏÓØñùÿÿÿÿ8×ÍÚã1J$56dec8f2-8574-4a96-8bca-7f17a1a057bc
+r	java:S106<"+Replace this use of System.out by a logger.(‘Ôí³ûÿÿÿÿ8ÙÍÚã1J$bb2dfd59-4bd4-471b-bfdf-8b6a25c72fa9
+r	java:S106="+Replace this use of System.out by a logger.(²Õßùÿÿÿÿ8ÙÍÚã1J$2f4817f7-5179-4296-98a4-417a59bd96a3
+m	java:S106B"+Replace this use of System.out by a logger.(ª®ò8ÚÍÚã1J$6422a2dc-20f5-4267-91c6-823f39ee87ff
+m	java:S106I"+Replace this use of System.out by a logger.(°¿¦ì8ÚÍÚã1J$6c4c6d15-e53a-45ed-b570-eb84bda226fd
+r	java:S106J"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÚÍÚã1J$a889e136-205e-4180-82c6-73858731f617

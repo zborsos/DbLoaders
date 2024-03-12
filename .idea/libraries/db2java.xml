@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="db2java">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Jars/db2java" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Jars/db2java" recursive="false" />
+  </library>
+</component>

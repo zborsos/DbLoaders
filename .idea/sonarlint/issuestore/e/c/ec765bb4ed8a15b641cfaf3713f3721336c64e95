@@ -1,0 +1,71 @@
+
+	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ô¥”ã1J$51bb70ca-5e58-4a36-9aae-d31d8a4085e9
+™	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ§ê€şÿÿÿÿ8Õ¥”ã1J$9d09c0ea-6836-43c6-a0d5-fc31817816c7
+e
+java:S1643Ç"Use a StringBuilder instead.(¶°Ôèøÿÿÿÿ8Õ¥”ã1J$3c07a84b-2b8b-4fc5-ac31-2b4bf000898c
+p
+java:S5411D"(Use a primitive boolean expression here.(«ª¥·ıÿÿÿÿ8Ö¥”ã1J$c0595f65-20c4-4ba2-8d3c-4636252fb640
+’
+java:S2095G"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(é§Ø„8‘“¢”ã1J$245106ee-9da1-4e5c-9da6-fdd6da6cb6c9
+“
+java:S2095„"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“÷ç¥8‘“¢”ã1J$0b84a553-93d1-4a82-8179-6b2397e8c5f6
+—
+java:S2095k"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(—ˆŒøÿÿÿÿ8‘“¢”ã1J$81b87a47-021c-4616-80c0-6f557020bc93
+“
+java:S2095Î"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(È˜ÛØ8Ü§”ã1J$6e6d36a9-360c-4020-8e75-63d4e85d0e2a
+˜	java:S116"VRename this field "IDS_2_FETCH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â«±Ü8İ§”ã1J$4c00e2ce-7e18-41ab-a14e-755b5029141c
+	java:S116"WRename this field "IDS_2_DELETE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Í¬ úÿÿÿÿ8İ§”ã1J$91e354cd-4b23-447f-9278-0db79e642d6e
+	java:S116"\Rename this field "DELETE_BATCH_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÃªœ8İ§”ã1J$0c02fbcb-b228-41a6-bf6e-2b82c684ccd9
+œ	java:S116"URename this field "deleted_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ñœ€ÿÿÿÿÿ8İ§”ã1J$3e3ad4b4-b9a7-47a9-8910-496a42cd7d21
+d
+java:S1170"!Make this final field static too.(â«±Ü8İ§”ã1J$4a147f4e-2a3b-43bd-ad6b-03ed0bf124a2
+d
+java:S1170"!Make this final field static too.(àÃªœ8İ§”ã1J$ea697c54-1a37-4ab3-8dbf-8700ce51636c
+i
+java:S1170"!Make this final field static too.(½ñœ€ÿÿÿÿÿ8İ§”ã1J$50f461be-a193-460f-b6f7-2ac949ddd786
+i
+java:S1170"!Make this final field static too.(èÆ›ıúÿÿÿÿ8İ§”ã1J$8109f507-d09b-4617-9ca1-6854f4a0c367
+d
+java:S1170"!Make this final field static too.(ïÄÜ›8İ§”ã1J$7fc264e0-db68-42b5-91f0-54fda1295242
+d
+java:S1170"!Make this final field static too.(³ş‡İ8İ§”ã1J$ced4d843-0345-46d8-bda2-67583f15d385
+c
+java:S1170"!Make this final field static too.(µ÷Î88İ§”ã1J$7e96449e-f37b-4e1f-b342-2f08e06214f8
+c
+java:S1170"!Make this final field static too.(¢Ô®u8İ§”ã1J$0672ec7f-169b-4186-b18e-1a6652cbc1de
+i
+java:S1170"!Make this final field static too.(—´„€øÿÿÿÿ8İ§”ã1J$c7e7db71-156c-4fcc-aa18-4345892516ca
+c
+java:S1170"!Make this final field static too.(…æöf8İ§”ã1J$6f1f123e-0445-458b-af2b-e7d247c50933
+d
+java:S1170"!Make this final field static too.(†™ª8İ§”ã1J$c17707fd-120b-4758-991b-a346a0bc77f3
+o
+java:S4925&"-Remove this "Class.forName()", it is useless.(ÑÌÒ(8à§”ã1J$2d8a647c-f44e-43da-82e8-415993bdecc7
+~
+java:S6437+"6Revoke and change this password, as it is compromised.(ÏÚŸÅşÿÿÿÿ8á§”ã1J$a2a7e308-68be-4d5b-98bc-677544f9f975
+r	java:S106-"+Replace this use of System.out by a logger.(ı™øøÿÿÿÿ8á§”ã1J$6cd4f1a8-6bea-4df0-aae3-b78e9f45bc7e
+m	java:S106S"+Replace this use of System.out by a logger.(…ûğÑ8å§”ã1J$eec7888e-9562-494f-a86c-7b29a4953954
+j
+java:S1481]"'Remove this unused "rs" local variable.(¶¨ÜŒ8æ§”ã1J$b749e0fd-4aa1-464a-bb4c-249496e829e5
+r	java:S106a"+Replace this use of System.out by a logger.(ºÔ“†úÿÿÿÿ8æ§”ã1J$a859fa00-cb7d-4880-b798-60602a5c6129
+m	java:S106d"+Replace this use of System.out by a logger.(äñ£¿8æ§”ã1J$a1af1058-180f-4891-8993-1d2bdd9bb114
+m	java:S106e"+Replace this use of System.out by a logger.(Î’Şï8æ§”ã1J$1bd036c6-49cb-4b48-8f1d-052aa1685581
+r	java:S106r"+Replace this use of System.out by a logger.(ğ…ÿ’ùÿÿÿÿ8ç§”ã1J$f82cdde9-fc79-401e-abd8-0359c234688c
+r	java:S106s"+Replace this use of System.out by a logger.(¼õ¯ûıÿÿÿÿ8ç§”ã1J$41ade4b2-502d-4ea5-8a70-b3d7c6cc1e8d
+r	java:S106t"+Replace this use of System.out by a logger.(²½Ğšıÿÿÿÿ8ç§”ã1J$00bca85d-3d3d-411b-834a-5f2853035ac2
+m	java:S106w"+Replace this use of System.out by a logger.(‰ÒèÔ8è§”ã1J$fd3e30bc-3210-43da-829e-b7e1fa8aa34a
+r	java:S106x"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8è§”ã1J$cac36433-3fe0-4a7b-b56d-c1c0a6f5e71b
+y
+java:S1854ª"5Remove this useless assignment to local variable "i".(Ş¼Ş¢8é§”ã1J$282cee42-b132-4e50-840f-5f7926e36dc4
+n	java:S106"+Replace this use of System.out by a logger.(´·ıú8é§”ã1J$b49bbbd3-d959-49a1-a72e-667a812f0fa6
+n	java:S106"+Replace this use of System.out by a logger.(¦Ší8ê§”ã1J$5426c226-fdf1-43d2-ae76-d0e6a4723ca9
+n	java:S106"+Replace this use of System.out by a logger.(·÷ìş8ê§”ã1J$848d0104-6b69-462f-8296-2e59ea40c649
+n	java:S106™"+Replace this use of System.out by a logger.(èé›ß8ê§”ã1J$c759a436-6b6c-460d-b9cb-2faab2779ce9
+n	java:S106š"+Replace this use of System.out by a logger.(éù‹“8ë§”ã1J$239545e3-b17f-41af-9b5a-11899b7c4702
+n	java:S106­"+Replace this use of System.out by a logger.(±‘Âª8ë§”ã1J$340df98f-5503-4945-82b8-9e577a453d8d
+‚
+java:S1155¸">Use isEmpty() to check whether the collection is empty or not.(ÓÊ•¨8í§”ã1J$19c973b7-8fd5-4d02-9b7e-fbe3347b0e2e
+r
+java:S5413Á")Verify that "remove()" is used correctly.(ÿŞ²Şøÿÿÿÿ8í§”ã1J$7b4f436e-cc9b-4c6b-b4c5-d2be57420dd1
+a
+java:S2119Ú"Save and re-use this "Random".(¼İÅf8ï§”ã1J$14cd83a0-c11f-4c77-b32b-6dcbeeeaf18c

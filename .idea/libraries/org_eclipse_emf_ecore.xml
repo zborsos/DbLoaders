@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.eclipse.emf.ecore">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Jars/org.eclipse.emf.ecore.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
