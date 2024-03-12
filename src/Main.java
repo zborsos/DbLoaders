@@ -1,5 +1,3 @@
-package com.zborsos.dbloaders;
-
 import com.zborsos.dbloaders.db2loader.DB2Loader;
 
 import java.sql.SQLException;
