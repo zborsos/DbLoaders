@@ -72,9 +72,9 @@ public class DB2Loader {
 			insertSmt.setString (3, deleted_by);
 			insertSmt.executeUpdate ();
 			insertSmt.close ();
+			insertedRecordsCount = i;
 			if (i % 5000 == 0) {
 				con.commit ();
-				insertedRecordsCount = i;
 			}
 		}
 		Duration durationUpload = Duration.ofMillis (1);

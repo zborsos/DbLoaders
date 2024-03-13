@@ -12,6 +12,9 @@
     <orderEntry type="library" name="oracle" level="project" />
     <orderEntry type="library" name="Jars" level="project" />
     <orderEntry type="library" name="plugins" level="project" />
+    <orderEntry type="library" name="log4j-over-slf4j-2.0.6" level="project" />
+    <orderEntry type="library" name="slf4j-api-2.0.6" level="project" />
+    <orderEntry type="library" name="slf4j.simple" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="bfea488d-019e-4bca-a380-197a5ae17af1" />
