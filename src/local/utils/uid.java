@@ -44,26 +44,6 @@ public final class uid implements Comparable, Serializable {
 
 
     /**
-     * Create a new UUID.
-     *
-     * Note: UUIDs are created based upon manipulating a time seed, which in the
-     * end is only as precise as Java on the underlying operating system.
-     * Batched requests which create > 1000 UUID's serially may eventually cause
-     * pausing, and potentially failure should the number of immediate request
-     * be larger than what the underlying clock granularity supports.
-     *
-     * @return a new Universally Unique Identifier.
-     * @throws Error
-     *             when an UUID cannot be generated due to clock synchronization
-     *             issues.
-     * @ShortOp This is a short operation; it may block only momentarily; safe
-     *          to call from a responsive thread.
-     */
-    public static uid generate() {
-        return createFrom(EcoreUtil.generateUUID().toCharArray());
-    }
-
-    /**
      * Reconstitute a UUID from a String representation. This method will do
      * basic heuristic checking to see if it appears to be a valid
      * representation for our UUID. This method serves as a mechanism for a
@@ -96,6 +76,25 @@ public final class uid implements Comparable, Serializable {
             throw new IllegalArgumentException(String.format("invalid UUID"));   //$NON-NLS-1$
         }
         return createFrom(trimmedValue);
+    }
+
+    /**
+     * Create a new UUID.
+     * <p>
+     * Note: UUIDs are created based upon manipulating a time seed, which in the
+     * end is only as precise as Java on the underlying operating system.
+     * Batched requests which create > 1000 UUID's serially may eventually cause
+     * pausing, and potentially failure should the number of immediate request
+     * be larger than what the underlying clock granularity supports.
+     *
+     * @return a new Universally Unique Identifier.
+     * @throws Error when an UUID cannot be generated due to clock synchronization
+     *               issues.
+     * @ShortOp This is a short operation; it may block only momentarily; safe
+     * to call from a responsive thread.
+     */
+    public static uid generate() {
+        return createFrom(EcoreUtil.generateUUID().toCharArray());
     }
 
     private static uid createFrom(char[] trimmedValue) {

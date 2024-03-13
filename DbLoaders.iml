@@ -9,6 +9,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.eclipse.emf.ecore" level="project" />
     <orderEntry type="library" name="db2java" level="project" />
+    <orderEntry type="library" name="oracle" level="project" />
+    <orderEntry type="library" name="Jars" level="project" />
+    <orderEntry type="library" name="plugins" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="bfea488d-019e-4bca-a380-197a5ae17af1" />

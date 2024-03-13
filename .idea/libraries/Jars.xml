@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Jars">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Jars" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Jars/commons-codec-1.16.0/apidocs" />
+      <root url="file://$USER_HOME$/Jars/commons-crypto-1.2.0/apidocs" />
+      <root url="file://$USER_HOME$/Jars/commons-jexl-3.3/apidocs" />
+      <root url="file://$USER_HOME$/Jars/commons-logging-1.2/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Jars" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Jars" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Jars" recursive="false" type="SOURCES" />
+  </library>
+</component>

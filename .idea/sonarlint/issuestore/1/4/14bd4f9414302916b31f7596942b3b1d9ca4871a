@@ -1,24 +1,24 @@
 
 r
-java:S1066"/Merge this if statement with the enclosing one.(Ç¿½ú8ºçÖŽã1J$ed0101da-92b1-4690-9074-a74e2325a665
+java:S1066"/Merge this if statement with the enclosing one.(Ç¿½ú8ºçÖŽã1J$66926169-60b4-49aa-a9f2-2e31f746b622
 }
-java:S1141-"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8»çÖŽã1J$a2b831b6-6730-4e54-b3f3-8b7c2b50a84a
-“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çû±þ8»çÖŽã1J$87e5732f-a5dc-49d6-8968-4f7d77f873f4
-e
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(À¯³Ú8•—³”ã1
-l
-java:S2095."OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(é§Ø„8•—³”ã1
-Y
-java:S2589"7Remove this expression which always evaluates to "true"(ëº®×ýÿÿÿÿ8–—³”ã1
-f
-java:S2583)"DChange this condition so that it does not always evaluate to "false"(‰³Ÿ¿ùÿÿÿÿ8–—³”ã1
-š
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ªù›“øÿÿÿÿ8ÀçÖŽã1J$c3e304a9-6a13-48d1-a14b-91c1fe349990
+java:S1141-"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8»çÖŽã1J$dab8ce78-2123-4a14-85d7-dfcebb283f5d
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çû±þ8»çÖŽã1J$93c04f5f-f91a-46e7-a9be-ccfab294e0ca
+’
+java:S2095."OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(é§Ø„8•—³”ã1J$4ea3c3b9-300e-4ba1-b87d-183744a14fab
+‹
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(À¯³Ú8•—³”ã1J$57d6c222-c492-4b10-b83d-7a0412ec972b
 
-java:S1854"7Remove this useless assignment to local variable "now".(‘äåþÿÿÿÿ8ÁçÖŽã1J$b8e82be2-ff13-46c5-a7a0-d4c8e754f0b3
+java:S2589"7Remove this expression which always evaluates to "true"(ëº®×ýÿÿÿÿ8–—³”ã1J$e6c6ee98-e92b-49d8-95aa-d34e01eefb93
+Œ
+java:S2583)"DChange this condition so that it does not always evaluate to "false"(‰³Ÿ¿ùÿÿÿÿ8–—³”ã1J$800e6d10-4b31-4ea4-a4a4-10224f4d2347
+š
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ªù›“øÿÿÿÿ8ÀçÖŽã1J$3f3f3aa6-1ee3-42b2-9ad8-f156ab719fcc
+
+java:S1854"7Remove this useless assignment to local variable "now".(‘äåþÿÿÿÿ8ÁçÖŽã1J$8321e3fe-fc68-4711-938f-3934e41bcadf
 p
-java:S1481"(Remove this unused "now" local variable.(‘äåþÿÿÿÿ8ÄçÖŽã1J$885823e5-107a-4ec5-b05d-775c62b3116d
-r	java:S1068"+Replace this use of System.out by a logger.(‘Ôí³ûÿÿÿÿ8ÊçÖŽã1J$e77a0ab6-1501-4c66-a41c-735d9d5c2da9
-r	java:S1069"+Replace this use of System.out by a logger.(²Õßùÿÿÿÿ8ÊçÖŽã1J$092560e8-f0df-4e2b-8b67-9eeec6abdf9c
-m	java:S106>"+Replace this use of System.out by a logger.(¦¶×¶8ËçÖŽã1J$d8bf7e64-675a-444b-8b69-114d8ece83b1
-r	java:S106H"+Replace this use of System.out by a logger.(‚ÞÏ¥ýÿÿÿÿ8ËçÖŽã1J$7b15447f-a848-4581-a8c7-a96fc262e0d3
+java:S1481"(Remove this unused "now" local variable.(‘äåþÿÿÿÿ8ÄçÖŽã1J$a62d6fea-b53d-4c96-bdbb-c2e585faff5e
+r	java:S1068"+Replace this use of System.out by a logger.(‘Ôí³ûÿÿÿÿ8ÊçÖŽã1J$204ca107-74da-451c-a4cd-cc8306f26176
+r	java:S1069"+Replace this use of System.out by a logger.(²Õßùÿÿÿÿ8ÊçÖŽã1J$edd728b6-1401-405d-8707-365f45d3daa8
+m	java:S106>"+Replace this use of System.out by a logger.(¦¶×¶8ËçÖŽã1J$8eaa2923-3412-4c8a-a8b4-daef026b9229
+r	java:S106H"+Replace this use of System.out by a logger.(‚ÞÏ¥ýÿÿÿÿ8ËçÖŽã1J$a27fd337-31fd-4f1d-a152-7c1e235cc777

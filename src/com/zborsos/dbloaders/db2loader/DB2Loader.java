@@ -1,15 +1,15 @@
 /* @formatter:on */
 package com.zborsos.dbloaders.db2loader;
 
-import java.math.BigInteger;
+import local.utils.random;
+import local.utils.uid;
+
 import java.sql.*;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-import java.util.UUID;
 
 public class DB2Loader {
 	final  int IDS_2_FETCH = 3; //Select IDs to delete
@@ -30,7 +30,7 @@ public class DB2Loader {
 	/**
      * Create the connection using the IBM Data Server Driver for JDBC and SQLJ
      */
-	private Connection con;
+	private Connection con = null;
 
     public DB2Loader () throws SQLException {
 			// Load the driver
@@ -46,11 +46,11 @@ public class DB2Loader {
 			System.exit(1);
 		}
 
-        con.setAutoCommit (false);
+		if(con != null){
+			con.setAutoCommit (false);
 			// Connection must be on a unit-of-work boundary to allow close
 			con.commit ();
-			// Close the connection
-			con.close ();
+		}
 	}
 
 	public long loadRandomRecords(long count2load) throws SQLException {
@@ -65,11 +65,9 @@ public class DB2Loader {
 				"VALUES (?, ?, ?, 12, 1, 1)";
 		startTime = System.currentTimeMillis();
 		for (int i = 0; i < count2load; i++){
-			String insertStm = (insertWithNull()) ? insertStmWithNulls : insertStmWithOnes ;
-			String uuid = String.format ("%040d", new BigInteger (UUID.randomUUID ().toString ().replace ("-", ""), 23));
-			String uuid23 = uuid.substring (uuid.length () - 23);
+			String insertStm = (random.getRandoTrueFalse ()) ? insertStmWithNulls : insertStmWithOnes ;
 			PreparedStatement insertSmt = con.prepareStatement (insertStm);
-			insertSmt.setString (1, uuid23);
+			insertSmt.setString (1, uid.generate().getUuidValue());
 			insertSmt.setString (2, ts.toString ());
 			insertSmt.setString (3, deleted_by);
 			insertSmt.executeUpdate ();
@@ -214,10 +212,7 @@ public class DB2Loader {
 
 		return totalDelCnt;
 	}
-	private Boolean insertWithNull(){
-		Random random = new Random();
-		return random.nextBoolean();
-	}
+
 }
 
 

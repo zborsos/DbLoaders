@@ -1,14 +1,14 @@
 
-k
-java:S3740"/Provide the parametrized type for this generic.(ÿş¸J$d11b324d-654e-4f1e-b89e-f9ac20189ff6
-ˆ	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÿş¸J$bd3d89d2-2e09-4a33-8a14-278d1d76bff0
-›
-java:S3008"ZRename this field "LASTCHAR_DIGITS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¸‰ûÿÿÿÿJ$c70fdf19-382b-4176-925e-3793c1448908
-|	java:S125&"<This block of commented-out lines of code should be removed.(ÑÕßéûÿÿÿÿJ$c2f05a7b-6ef3-4251-b0b2-7bf9fe1499b6
-}
-java:S2130["AUse "Boolean.parseBoolean" for this string-to-boolean conversion.(°©ÍçJ$c366988a-4552-4bc6-bf78-adb3f13c2b45
-h
-java:S1125\"'Remove the unnecessary boolean literal.(ĞâÃûÿÿÿÿJ$2afda27b-46b1-4495-b99b-396f5d212697
-k	java:S106]"+Replace this use of System.out by a logger.(ìºÄüÿÿÿÿJ$5e0d045f-4d56-47ed-ad22-4bcc0fee660a
-f
-java:S3457`"%String contains no format specifiers.(¥¸“ìøÿÿÿÿJ$9a31b57b-4b61-490b-9e32-42a54814454a
+r
+java:S3740"/Provide the parametrized type for this generic.(ÿş¸8´÷éšã1J$b01d4743-185f-4b4b-b217-4dc654846225
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÿş¸8¶÷éšã1J$a429fc0e-152f-42cc-8d71-b91b2efcb5ce
+¢
+java:S3008"ZRename this field "LASTCHAR_DIGITS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¸‰ûÿÿÿÿ8È÷éšã1J$6dda25a3-90df-4298-93fa-8dd944947ed6
+ƒ	java:S125&"<This block of commented-out lines of code should be removed.(ÑÕßéûÿÿÿÿ8Ë÷éšã1J$05aec9b2-7a46-4c65-bf29-46727855f29e
+„
+java:S2130G"AUse "Boolean.parseBoolean" for this string-to-boolean conversion.(°©Íç8Í÷éšã1J$8ab898c5-eee5-4931-8fec-eebd811fb6d7
+o
+java:S1125H"'Remove the unnecessary boolean literal.(ĞâÃûÿÿÿÿ8Î÷éšã1J$b1ccec0f-c580-4af4-8b5e-5cba9402acce
+r	java:S106I"+Replace this use of System.out by a logger.(ìºÄüÿÿÿÿ8Î÷éšã1J$a87e05cd-3a12-42c5-be5f-ec43a4be0dc9
+m
+java:S3457L"%String contains no format specifiers.(¥¸“ìøÿÿÿÿ8Ï÷éšã1J$26454941-8276-4ad7-bd3d-87084ac362c2
