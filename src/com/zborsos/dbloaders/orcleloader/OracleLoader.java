@@ -1,6 +1,5 @@
 package com.zborsos.dbloaders.orcleloader;
 
-import local.utils.random;
 import local.utils.uid;
 
 import java.sql.*;
@@ -8,15 +7,16 @@ import java.time.Duration;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class OracleLoader {
     final Logger log = Logger.getLogger(this.getClass().getName());
-    final  int IDS_2_FETCH = 3; //Select IDs to delete
+    final  int IDS_2_FETCH = 1000000; //Select IDs to delete
     List<String> IDS_2_DELETE = new ArrayList<>(IDS_2_FETCH);
-    final  int DELETE_BATCH_SIZE = 1 ;
+    final  int DELETE_BATCH_SIZE = 500 ;
     final String deleted_by = "_KGRY4CFWEdq-WY5y7lROQw";
     final String tableName = "JTSDBUSER.REPOSITORY_DELETED_ITEMS";
     final String urlPrefix = "jdbc:db2:";
@@ -64,6 +64,10 @@ public class OracleLoader {
         long insertedRecordsCount = 0;
         long startTime;
         Timestamp ts = new Timestamp (System.currentTimeMillis ());
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(ts);
+        cal.add(Calendar.DATE, -2);
+        Timestamp Yesterday = new Timestamp(cal.getTime().getTime());
         final String insertStmWithNulls = "INSERT INTO "+tableName+" " +
                 "(ITEM_UUID, DELETED_WHEN, DELETED_BY, ITEM_TYPE_DBID, CONTENT_DELETED, STATES_DELETED) " +
                 "VALUES (?, ?, ?, 12, 0, 0)";
@@ -72,12 +76,13 @@ public class OracleLoader {
                 "VALUES (?, ?, ?, 12, 1, 1)";
         startTime = System.currentTimeMillis();
         for (int i = 0; i < count2load; i++){
-            String insertStm = (random.getRandoTrueFalse ()) ? insertStmWithNulls : insertStmWithOnes ;
+            //String insertStm = (random.getRandoTrueFalse ()) ? insertStmWithNulls : insertStmWithOnes ;
+            String insertStm = insertStmWithOnes ;
             log.finest(insertStm);
             try{
                 PreparedStatement insertSmt = con.prepareStatement (insertStm);
                 insertSmt.setString (1, uid.generate().getUuidValue());
-                insertSmt.setTimestamp (2, ts);
+                insertSmt.setTimestamp (2, Timestamp.from (yesterday));
                 insertSmt.setString (3, deleted_by);
                 insertSmt.executeUpdate ();
                 insertSmt.close ();
@@ -104,14 +109,14 @@ public class OracleLoader {
     public long deleteWithEmbeddedSelect() throws SQLException {
         long startTime;
         ResultSet rs;
-        int loopCount = (IDS_2_FETCH%DELETE_BATCH_SIZE > 0)?
+        int loopCount = (IDS_2_FETCH % DELETE_BATCH_SIZE > 0)?
                 (IDS_2_FETCH/DELETE_BATCH_SIZE) + 1 : (IDS_2_FETCH/DELETE_BATCH_SIZE);
         long totalDelCnt = 0;
-        log.config ("DELETE with embedded SELECT( original way of doing it)");
+        log.info ("DELETE with embedded SELECT( original way of doing it)");
         String deleteStmnt = "DELETE FROM "+tableName+" WHERE ITEM_UUID IN " +
                 "("+ selectIDs + whereWithDate + fetchFirstXRows + ")";
         log.finest (deleteStmnt);
-        log.finest("Deleting "+IDS_2_FETCH+" records in batches of "+DELETE_BATCH_SIZE);
+        log.info("Deleting "+IDS_2_FETCH+" records in batches of "+DELETE_BATCH_SIZE);
 
         startTime = System.nanoTime ();
         Duration durationSelectLoop = Duration.ofSeconds (0) ;
@@ -120,9 +125,9 @@ public class OracleLoader {
             pstmt = con.prepareStatement (deleteStmnt);
             pstmt.setTimestamp (1, Timestamp.from (yesterday));
             pstmt.setInt (2, DELETE_BATCH_SIZE);
-            totalDelCnt += pstmt.executeUpdate ();
-            pstmt.close ();
-            con.commit ();
+            totalDelCnt += pstmt.executeUpdate();
+            pstmt.close();
+            con.commit();
         }
         log.info ("Deleted records: " + totalDelCnt);
         log.info ("Deleted batch size: " + DELETE_BATCH_SIZE);
@@ -221,5 +226,4 @@ public class OracleLoader {
 
         return totalDelCnt;
     }
-
 }

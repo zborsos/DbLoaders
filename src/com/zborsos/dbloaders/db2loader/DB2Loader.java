@@ -1,7 +1,6 @@
 /* @formatter:on */
 package com.zborsos.dbloaders.db2loader;
 
-import local.utils.random;
 import local.utils.uid;
 
 import java.sql.*;
@@ -12,9 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DB2Loader {
-	final  int IDS_2_FETCH = 3; //Select IDs to delete
+	final  int IDS_2_FETCH = 1000000; //Select IDs to delete
 	 List<String> IDS_2_DELETE = new ArrayList<> (IDS_2_FETCH);
-	final  int DELETE_BATCH_SIZE = 1 ;
+	final  int DELETE_BATCH_SIZE = 500 ;
 	final String deleted_by = "_KGRY4CFWEdq-WY5y7lROQw";
 	final  String inlistJoin = " /* <OPTGUIDELINES> <INLIST2JOIN TABLE=\"REPOSITORY.DELETED_ITEMS\" COLUMN=\"ITEM_UUID\"/> </OPTGUIDELINES> */";
 	final String urlPrefix = "jdbc:db2:";
@@ -56,7 +55,7 @@ public class DB2Loader {
 	public long loadRandomRecords(long count2load) throws SQLException {
 		long insertedRecordsCount = 0;
 		long startTime;
-		Timestamp ts = new Timestamp (System.currentTimeMillis ());
+
 		final String insertStmWithNulls = "INSERT INTO REPOSITORY.DELETED_ITEMS " +
 				"(ITEM_UUID, DELETED_WHEN, DELETED_BY, ITEM_TYPE_DBID, CONTENT_DELETED, STATES_DELETED) " +
 				"VALUES (?, ?, ?, 12, 0, 0)";
@@ -65,10 +64,11 @@ public class DB2Loader {
 				"VALUES (?, ?, ?, 12, 1, 1)";
 		startTime = System.currentTimeMillis();
 		for (int i = 0; i < count2load; i++){
-			String insertStm = (random.getRandoTrueFalse ()) ? insertStmWithNulls : insertStmWithOnes ;
+			//String insertStm = (random.getRandoTrueFalse ()) ? insertStmWithNulls : insertStmWithOnes ;
+			String insertStm = insertStmWithOnes ;
 			PreparedStatement insertSmt = con.prepareStatement (insertStm);
 			insertSmt.setString (1, uid.generate().getUuidValue());
-			insertSmt.setString (2, ts.toString ());
+			insertSmt.setTimestamp (2, Timestamp.from (yesterday));
 			insertSmt.setString (3, deleted_by);
 			insertSmt.executeUpdate ();
 			insertSmt.close ();

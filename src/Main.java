@@ -2,6 +2,7 @@ import com.zborsos.dbloaders.db2loader.DB2Loader;
 import com.zborsos.dbloaders.derbyloader.DerbyLoader;
 import com.zborsos.dbloaders.orcleloader.OracleLoader;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
@@ -9,6 +10,7 @@ public class Main {
     final static Logger log = Logger.getLogger("DbLoade.project");
     
     public static void main(String[] args) {
+        log.setLevel(Level.FINEST);
         final String db = "Oracle";
         if(db.equals("DB2")){
             try {
@@ -29,10 +31,10 @@ public class Main {
         if(db.equals("Oracle")){
             try {
                 OracleLoader dbl = new OracleLoader();
-                dbl.loadRandomRecords(50000);
+                dbl.loadRandomRecords(500000);
                 long delCount = dbl.deleteWithEmbeddedSelect();
                 log.info("Deleted "+delCount);
-                dbl.loadRandomRecords(50000);
+                dbl.loadRandomRecords(500000);
                 delCount = dbl.deleteSelectedIDs();
                 log.info("Deleted "+delCount);
             } catch (Exception e) {
