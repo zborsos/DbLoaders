@@ -1,19 +1,0 @@
-
-L
-java:S1066"/Merge this if statement with the enclosing one.(Ç¿½ú8ºçÖã1
-W
-java:S1141,"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8»çÖã1
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çû±ş8»çÖã1
-Ç
-java:S1598"¤This file "Derby.java" should be located in "com/zborsos/dbloaders/derbyloader" directory, not in "/Users/zborsos/IdeaProjects/DbLoaders/src/com/zborsos/dbloaders".(´·²²şÿÿÿÿ8¼çÖã1
-t
-java:S3776
-"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ªù›“øÿÿÿÿ8ÀçÖã1
-Y
-java:S1854"7Remove this useless assignment to local variable "now".(‘äåşÿÿÿÿ8ÁçÖã1
-J
-java:S1481"(Remove this unused "now" local variable.(‘äåşÿÿÿÿ8ÄçÖã1
-L	java:S1067"+Replace this use of System.out by a logger.(‘Ôí³ûÿÿÿÿ8ÊçÖã1
-L	java:S1068"+Replace this use of System.out by a logger.(²Õßùÿÿÿÿ8ÊçÖã1
-G	java:S106="+Replace this use of System.out by a logger.(¦¶×¶8ËçÖã1
-L	java:S106G"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ8ËçÖã1

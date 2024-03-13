@@ -1,19 +1,0 @@
-
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ú¡–ã1J$3f6c1670-71e1-4105-859a-dec40aa4587e
-g	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±‚«–ã1
-Œ
-java:S1192"IDefine a constant instead of duplicating this literal "Deleted " 4 times.(İŞÚ»8û¡–ã1J$99b2f9cb-c454-4404-8dd9-7f2ddf1c343f
-]
-java:S1220""Move this file to a named package.8ü¡–ã1J$7e5ce7aa-08d5-4c24-b43c-65900c42365a
-z
-java:S1854)"7Remove this useless assignment to local variable "dbl".(Öÿö¥8…¢–ã1J$9beec309-c16a-47d4-a29f-af596278d5ab
-m	java:S106"+Replace this use of System.out by a logger.(İŞÚ»8‡¢–ã1J$f8e55562-69d3-4ca4-b6fc-5c981749d5da
-m	java:S106"+Replace this use of System.out by a logger.(İŞÚ»8‡¢–ã1J$5c4926d8-da45-45ec-b659-3be6d728caaf
-r	java:S106"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8‡¢–ã1J$d1aa3f0f-11ef-44e3-97b1-729b553c81c3
-m	java:S106"+Replace this use of System.out by a logger.(İŞÚ»8ˆ¢–ã1J$4112188b-69ef-4624-a3da-f6f6b1d8d224
-m	java:S106 "+Replace this use of System.out by a logger.(İŞÚ»8‰¢–ã1J$d89adbe8-f92c-4fb5-bcb3-a01f3a59a243
-r	java:S106""+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8É´Ÿ–ã1J$14e062bc-2f47-4b95-b034-a7433468b4b3
-n
-java:S2440)"+Remove this instantiation of "DerbyLoader".(Öÿö¥8‰¢–ã1J$7e042a7c-c5e5-4828-98a7-f5f4e8ab6c4e
-k
-java:S1481)"(Remove this unused "dbl" local variable.(Öÿö¥8‰¢–ã1J$8db688b1-c400-4553-88d8-bc36c34a799b

@@ -1,16 +1,0 @@
-
-r
-java:S1066"/Merge this if statement with the enclosing one.(Ç¿½ú8ºçÖŽã1J$07424ac4-a64f-41d4-902f-56fa67f6ebed
-}
-java:S1141-"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8»çÖŽã1J$8ba43d26-bb53-4c75-839c-bdedb9c9ffe0
-“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çû±þ8»çÖŽã1J$14a5f563-f27e-4845-8b08-a085506f6e89
-š
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ªù›“øÿÿÿÿ8ÀçÖŽã1J$7482c5c8-d908-4ff1-b323-60b1c7b65963
-
-java:S1854"7Remove this useless assignment to local variable "now".(‘äåþÿÿÿÿ8ÁçÖŽã1J$33cf9f56-671f-4be3-9002-819656cac87c
-p
-java:S1481"(Remove this unused "now" local variable.(‘äåþÿÿÿÿ8ÄçÖŽã1J$36f58d45-f7c0-4b14-8189-5fa832f95ddf
-r	java:S1068"+Replace this use of System.out by a logger.(‘Ôí³ûÿÿÿÿ8ÊçÖŽã1J$c211862e-5536-4f7e-8440-cb3a4f368636
-r	java:S1069"+Replace this use of System.out by a logger.(²Õßùÿÿÿÿ8ÊçÖŽã1J$f74441f0-2991-422b-9f8b-e0ecae4e3c92
-m	java:S106>"+Replace this use of System.out by a logger.(¦¶×¶8ËçÖŽã1J$51303ee5-6fb6-4d81-a2f3-6d62ddacb8d3
-r	java:S106H"+Replace this use of System.out by a logger.(‚ÞÏ¥ýÿÿÿÿ8ËçÖŽã1J$78911da3-41fb-4225-9079-bec489ce785d

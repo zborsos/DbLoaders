@@ -8,6 +8,8 @@ out/
 .classpath
 .factorypath
 .project
+.idea
+.idea/sonarlint/**
 .settings
 .springBeans
 .sts4-cache
